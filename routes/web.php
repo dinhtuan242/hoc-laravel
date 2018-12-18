@@ -15,5 +15,11 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/about', function () {
-    return 'trang about';
+    return 'Đây là trang thông tin';
+});
+Route::get('/contact', function () {
+    return 'Đây là trang liên hệ';
+});
+Route::get('/help', function () {
+    return 'Đây là trang trợ giúp';
 });
