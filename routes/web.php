@@ -43,3 +43,4 @@ Route::get('about/test', array('as' => 'tests', function(){
 Route::get('admin', function(){
    return Redirect::route('tests');
 });
+Route::get('/controller', 'HomeController@showWellcome');
