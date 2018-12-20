@@ -19,4 +19,8 @@ class HomeController extends BaseController
     public function showHome(){
         return view('index');
     }
+
+    public function showProfile($name){
+        return  view('prifile') -> with('ten', $name);
+    }
 }

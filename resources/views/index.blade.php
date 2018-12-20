@@ -17,7 +17,7 @@
 	<!--Favicon-->
 	<link rel="shortcut icon" href="http://localhost:3408/demo/resources/images/favicon.ico" type="image/x-icon">
 	<link rel="icon" href="http://localhost:3408/demo/resources/images/favicon.ico" type="image/x-icon">
-	
+
 	<!-- CSS
 	================================================== -->
 	
@@ -563,7 +563,7 @@
 						 	</div><!--/ Featured post end -->
 						</div><!-- Item 2 end -->
 
-						<div class="item" style="background-image:url(http://localhost:3408/demo/resources/images/news/lifestyle/travel5.jpg)">
+						<div class="item" style="background-image:url(http://localhost:3408/demo/resoures/images/news/lifestyle/travel5.jpg)">
 							<div class="featured-post">
 						 		<div class="post-content">
 						 			<a class="post-cat" href="#">Travel</a>

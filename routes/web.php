@@ -47,3 +47,4 @@ Route::get('/controller', 'HomeController@showWellcome');
 Route::get('/aboutcontent', 'AboutController@showContent');
 Route::get('/about/{id}', 'AboutController@showId');
 Route::get('/index',  'HomeController@showHome');
+Route::get('/profile/{name}', 'HomeController@showProfile');
