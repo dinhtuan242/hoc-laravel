@@ -15,4 +15,8 @@ class HomeController extends BaseController
     public function showWellcome(){
         return 'Wellcome';
     }
+
+    public function showHome(){
+        return view('index');
+    }
 }
