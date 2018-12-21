@@ -10,7 +10,7 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-
+use App\Post;
 Route::get('/', function () {
     return view('welcome');
 });
@@ -48,3 +48,19 @@ Route::get('/aboutcontent', 'AboutController@showContent');
 Route::get('/about/{id}', 'AboutController@showId');
 Route::get('/index',  'HomeController@showHome');
 Route::get('/profile/{name}', 'HomeController@showProfile');
+Route::get('/insert', function(){
+    DB::insert("insert into posts(title, content) values(?,?)", ['Học framework Laravel', 'Laravel là framework của ']);
+});
+Route::get('/update', function(){
+   DB::update("update posts set content = 'Laravel là framework của PHP' where id = 1");
+});
+Route::get('/delete', function(){
+    $delete = DB::delete("delete from posts where id = ?", [1]);
+    return $delete;
+});
+Route::get('/read-all', function(){
+   $posts = Post::all();
+   foreach ($posts as $post){
+       return $post->title;
+   }
+});
