@@ -64,3 +64,22 @@ Route::get('/read-all', function(){
        return $post->title;
    }
 });
+Route::get('/search', function(){
+    $posts = Post::where('id', 2)
+        ->take(1)
+        ->get();
+    foreach ($posts as $post) {
+        return $post->title;
+    }
+});
+Route::get('/insertORM', function(){
+   $posts = new Post;
+   $posts->title = 'Tiêu đề bài đăng';
+   $posts->content = 'Nội dung bài đăng';
+   $posts->save();
+});
+Route::get('/updateorm/{id}', function($id){
+   $post = Post::find($id);
+   $post->title = 'Nội dung bài đăng id = '.$id;
+   $post->save();
+});
